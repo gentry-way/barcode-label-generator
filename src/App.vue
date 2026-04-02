@@ -8,7 +8,7 @@
     <Barcode :id="'lot-number'" :text="lotNumber"></Barcode>
     <div>GENTRY HARDWARE PRODUCTS CO., LTD.</div>
     <div>PRODUCT: ALUM. IV STAND</div>
-    <div>REF: GT-9403D-4H-KD</div>
+    <div>REF: GT-9403D-4H-KD-1</div>
     <div v-if="lotNumberIsAvailable">LOT: {{ lotNumber }}</div>
     <div v-else class="text-red-600">LOT: PENDING</div>
     <br />
@@ -47,7 +47,7 @@ const lotNumberIsAvailable = computed(() => lotNumber.value.length > 0)
 const labelElement = ref<HTMLElement>()
 
 const saveLabel = async (
-  htmlElement: HTMLElement | undefined
+  htmlElement: HTMLElement | undefined,
 ): Promise<void> => {
   if (htmlElement !== undefined) {
     const blob = await htmlToImage.toBlob(htmlElement)
