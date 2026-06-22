@@ -4,7 +4,7 @@
     class="p-4 bg-white border border-black border-solid w-max"
   >
     <Barcode :id="'vendor'" :text="'GENTRY HARDWARE'"></Barcode>
-    <Barcode :id="'model'" :text="'GT-9403D-4H-KD'"></Barcode>
+    <Barcode :id="'model'" :text="'36-9403D-4H'"></Barcode>
     <Barcode :id="'lot-number'" :text="lotNumber"></Barcode>
     <div>GENTRY HARDWARE PRODUCTS CO., LTD.</div>
     <div>PRODUCT: ALUM. IV STAND</div>
